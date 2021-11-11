@@ -13,6 +13,7 @@ public class projectController {
         String rslt = "";
 
         int mamat = 30; int puji = 10;
+        
         int hitung = mamat/puji;
 
         rslt = Integer.toString(hitung);
@@ -20,7 +21,11 @@ public class projectController {
         return rslt;
     }
 
+    @RequestMapping("/viewMinuman")
+    public String lihatData(){
 
+        return "viewData"; //didalam tanda petik adalah nama file html tujuan
+    }
 
 
 }
