@@ -7,16 +7,18 @@
     <title>Lihat Minuman</title>
   </head>
   <body>
-      <div>DATA MINUMAN</div>
-      <HR>
+    <h1 th:text="${inisial}"></h1>
+
+    <div>DATA MINUMAN</div>
+    <hr />
     <table border="1">
       <tr>
         <th>Nama</th>
         <th>Harga</th>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
+      <tr th:each="produk:${listminuman}"> <!--untuk penamaan baru listminuman yang diambil dari controller-->
+        <td th:text="${produk[0]}"></td>
+        <td th:text="${produk[1]}"></td>
       </tr>
     </table>
   </body>
