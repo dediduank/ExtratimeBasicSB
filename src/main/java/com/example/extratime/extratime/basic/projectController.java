@@ -19,12 +19,13 @@ public class projectController {
 
         int mamat = 30;
         int puji = 10;
+        String cek = "Hasil : ";
 
         int hitung = mamat / puji;
 
         rslt = Integer.toString(hitung);
 
-        return rslt;
+        return cek + rslt;
     }
 
     @RequestMapping("/viewMinuman") // untuk mengirim 1 data
